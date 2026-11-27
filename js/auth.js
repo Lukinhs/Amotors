@@ -1,3 +1,18 @@
+const btnDark = document.getElementById('btn-dark');
+
+btnDark.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  
+  if (document.body.classList.contains('dark-mode')) {
+    btnDark.textContent = 'Modo Claro';
+    btnDark.style.backgroundColor = '#ffffff';
+    btnDark.style.color = '#121212';
+  } else {
+    btnDark.textContent = 'Modo Escuro';
+    btnDark.style.backgroundColor = '#212529';
+    btnDark.style.color = '#ffffff';
+  }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
 

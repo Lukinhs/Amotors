@@ -1,4 +1,4 @@
-/* variaveis de cor e tal */
+
 :root {
   --bg-primary: #f8f9fa;
   --bg-card: #ffffff;
@@ -12,7 +12,6 @@
   --transition-fast: 0.3s ease;
 }
 
-/* modo escuro quando clicar no botao */
 .dark-mode {
   --bg-primary: #121212;
   --bg-card: #1e1e1e;
@@ -21,14 +20,12 @@
   --border-color: #333333;
 }
 
-/* reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* corpo da pagina */
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--bg-primary);
@@ -43,7 +40,6 @@ main {
   padding: 20px;
 }
 
-/* header com logo e menu */
 header {
   max-width: 1200px;
   margin: 0 auto;
@@ -81,7 +77,6 @@ header {
   color: var(--text-secondary);
 }
 
-/* menu de navegaçao */
 .menu .lista {
   display: flex;
   gap: 24px;
@@ -99,7 +94,6 @@ header {
   color: var(--accent-color);
 }
 
-/* botao do modo escuro */
 header button {
   background-color: var(--text-primary);
   color: var(--bg-primary);
@@ -111,7 +105,6 @@ header button {
   transition: background-color var(--transition-fast), color var(--transition-fast);
 }
 
-/* banner com slides */
 .banners {
   position: relative;
   margin-bottom: 40px;
@@ -131,7 +124,6 @@ header button {
   position: relative;
 }
 
-/* texto por cima do banner */
 .conteudo {
   position: absolute;
   bottom: 0;
@@ -148,7 +140,6 @@ header button {
   margin-bottom: 8px;
 }
 
-/* setas do carrossel */
 .anterior, .proximo {
   position: absolute;
   top: 50%;
@@ -172,7 +163,6 @@ header button {
   background-color: rgba(255, 255, 255, 1);
 }
 
-/* formulario de venda */
 .form-venda {
   display: flex;
   flex-direction: row;
@@ -198,7 +188,6 @@ header button {
   width: 50%;
 }
 
-/* area de upload de fotos */
 .upload-div {
   width: 50%;
   padding: 0 20px;
@@ -246,7 +235,6 @@ header button {
   color: var(--text-secondary);
 }
 
-/* miniaturas das fotos que o usuario escolheu */
 .preview-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
@@ -261,7 +249,6 @@ header button {
   display: block;
 }
 
-/* botao de remover a foto (aparece no hover) */
 .preview-grid button {
   position: absolute;
   top: 6px;
@@ -283,7 +270,6 @@ header button {
   opacity: 1;
 }
 
-/* botao de enviar */
 .btn-comprar {
   background-color: var(--accent-color);
   border: none;
@@ -300,7 +286,6 @@ header button {
   background-color: var(--accent-hover);
 }
 
-/* rodape */
 .rodapé {
   text-align: center;
   padding: 30px 20px;
@@ -316,7 +301,6 @@ header button {
   margin-bottom: 10px;
 }
 
-/* redes sociais no rodape */
 .redes-sociais {
   display: flex;
   align-items: center;
@@ -336,12 +320,10 @@ header button {
   color: var(--accent-color);
 }
 
-/* logo fica branca no modo escuro */
 body.dark-mode .logo-img {
   filter: brightness(0) invert(1);
 }
 
-/* grid de carros nas paginas */
 .paginas .carros {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -368,7 +350,6 @@ body.dark-mode .logo-img {
   background-color: var(--accent-hover);
 }
 
-/* responsivo - tablet */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -408,7 +389,6 @@ body.dark-mode .logo-img {
   }
 }
 
-/* responsivo - celular */
 @media (max-width: 480px) {
   .paginas .carros {
     grid-template-columns: 1fr;
@@ -422,4 +402,4 @@ body.dark-mode .logo-img {
     padding: 8px 10px;
     font-size: 1rem;
   }
-}   
+}
