@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha | Motors and Bikes</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/LOGO_AMB-04.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="paginas">
+    <header>
+      <div class="logo">
+        <img
+          src="assets/LOGO_AMB-01.png"
+          alt="Logo Alpha Motors"
+          class="logo-img"
+        />
+        <div class="logo-titulo">
+          <h2>Alpha Motors</h2>
+          <p>Carros e motos</p>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul class="lista">
+          <li><a href="index.html" class="secoes">Início</a></li>
+          <li><a href="#comprar" class="secoes">Comprar</a></li>
+          <li><a href="venda.html" class="secoes">Vender</a></li>
+          <li><a href="#rodape" class="secoes">Sobre nós</a></li>
+        </ul>
+      </nav>
+      <div class="btn-area">
+        <button id="btn-dark">Modo Escuro</button>
+        <button><i class="fa-regular fa-user"></i></button>
+      </div>
+    </header>
+
+    <div class="carrosTitulos">
+      <h2>Picapes</h2>
+      <p>Encontre a picape ideal para você!</p>
+    </div>
+
+    <div class="carros">
+      <div class="card">
+        <img
+          src="assets/carros/saveiro.png"
+          alt="Volkswagen Saveiro Robust"
+          class="img-carros"
+        />
+        <h3>Volkswagen Saveiro Robust - 2020</h3>
+        <p>0 km | Flex | Manual</p>
+        <strong>R$ 60.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Volkswagen Saveiro Robust 2020',
+              'R$ 60.000,00',
+              '0 km',
+              'Flex',
+              'Manual',
+              'assets/carros/saveiro.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/strada.png"
+          alt="Fiat Strada Hard Working"
+          class="img-carros"
+        />
+        <h3>Fiat Strada Hard Working - 2020</h3>
+        <p>15.000 km | Flex | Manual</p>
+        <strong>R$ 62.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Fiat Strada Hard Working 2020',
+              'R$ 62.000,00',
+              '15.000 km',
+              'Flex',
+              'Manual',
+              'assets/carros/strada.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/montana.png"
+          alt="Chevrolet Montana"
+          class="img-carros"
+        />
+        <h3>Chevrolet Montana - 2026</h3>
+        <p>10.000 km | Flex | Manual</p>
+        <strong>R$ 75.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Chevrolet Montana 2026',
+              'R$ 75.000,00',
+              '10.000 km',
+              'Flex',
+              'Manual',
+              'assets/carros/montana.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/l200.png"
+          alt="Mitsubishi L200"
+          class="img-carros"
+        />
+        <h3>Mitsubishi L200 - 2015</h3>
+        <p>5.000 km | Diesel | Automático</p>
+        <strong>R$ 105.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Mitsubishi L200 2015',
+              'R$ 105.000,00',
+              '5.000 km',
+              'Diesel',
+              'Automático',
+              'assets/carros/l200.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/ranger.png"
+          alt="Ford Ranger"
+          class="img-carros"
+        />
+        <h3>Ford Ranger - 2020</h3>
+        <p>10.000 km | Diesel | Manual</p>
+        <strong>R$ 75.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Ford Ranger 2020',
+              'R$ 75.000,00',
+              '10.000 km',
+              'Diesel',
+              'Manual',
+              'assets/carros/ranger.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/hilux.png"
+          alt="Toyota Hilux"
+          class="img-carros"
+        />
+        <h3>Toyota Hilux - 2015</h3>
+        <p>0 km | Diesel | Automático</p>
+        <strong>R$ 135.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Toyota Hilux 2015',
+              'R$ 135.000,00',
+              '0 km',
+              'Diesel',
+              'Automático',
+              'assets/carros/hilux.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/frontier.png"
+          alt="Nissan Frontier"
+          class="img-carros"
+        />
+        <h3>Nissan Frontier - 2018</h3>
+        <p>10.000 km | Diesel | Automático</p>
+        <strong>R$ 82.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Nissan Frontier 2018',
+              'R$ 82.000,00',
+              '10.000 km',
+              'Diesel',
+              'Automático',
+              'assets/carros/frontier.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="assets/carros/ram.png" alt="Ram Rampage" class="img-carros" />
+        <h3>Ram Rampage - 2026</h3>
+        <p>0 km | Diesel | Automático</p>
+        <strong>R$ 150.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Ram Rampage 2026',
+              'R$ 150.000,00',
+              '0 km',
+              'Diesel',
+              'Automático',
+              'assets/carros/ram.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+    </div>
+
+    <div id="modal-veiculo" class="modal-veiculo">
+      <div class="modal-conteudo">
+        <button class="fechar-modal" onclick="fecharModal()">&times;</button>
+        <img id="modal-imagem" src="" alt="Veículo" />
+        <div class="detalhes-veiculo">
+          <h2 id="modal-nome"></h2>
+          <h3 id="modal-preco"></h3>
+          <div class="info-veiculo">
+            <span id="modal-km"></span>
+            <span id="modal-combustivel"></span>
+            <span id="modal-cambio"></span>
+          </div>
+          <p>Interessado neste veículo? Entre em contato com nossa equipe!</p>
+          <button class="botao-interesse">Tenho interesse neste veículo</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="rodapé" id="rodape">
+      <p class="title-rodape">
+        &copy; 2026 Alpha Motors and Bikes. Todos os direitos reservados.
+      </p>
+      <div class="redes-sociais">
+        <a href="https://www.instagram.com/alpha_motors_bikes/" target="_blank"
+          ><i class="fa-brands fa-instagram links-rodape">
+            | Visite nosso perfil no Instagram</i
+          ></a
+        >
+        <a
+          href="https://www.facebook.com/profile.php?id=100089168091187"
+          target="_blank"
+          ><i class="fa-brands fa-facebook links-rodape">
+            | Visite nosso perfil no Facebook</i
+          ></a
+        >
+        <a href="https://twitter.com/AlphaMotorsB" target="_blank"
+          ><i class="fa-brands fa-x-twitter links-rodape">
+            | Visite nosso perfil no X</i
+          ></a
+        >
+        <a href="https://wa.me/551128833666" target="_blank"
+          ><i class="fa-brands fa-whatsapp links-rodape">
+            | Fale com a Alpha pelo WhatsApp</i
+          ></a
+        >
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

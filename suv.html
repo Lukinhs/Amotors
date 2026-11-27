@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha | Motors and Bikes</title>
+    <link rel="icon" type="image/x-icon" href="assets/LOGO_AMB-04.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="paginas">
+    <header>
+      <div class="logo">
+        <img
+          src="assets/LOGO_AMB-01.png"
+          alt="Logo Alpha Motors"
+          class="logo-img"
+        />
+        <div class="logo-titulo">
+          <h2>Alpha Motors</h2>
+          <p>Carros e motos</p>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul class="lista">
+          <li><a href="index.html" class="secoes">Início</a></li>
+          <li><a href="#comprar" class="secoes">Comprar</a></li>
+          <li><a href="venda.html" class="secoes">Vender</a></li>
+          <li><a href="#rodape" class="secoes">Sobre nós</a></li>
+        </ul>
+      </nav>
+      <div class="btn-area">
+        <button id="btn-dark">Modo Escuro</button>
+        <button><i class="fa-regular fa-user"></i></button>
+      </div>
+    </header>
+
+    <div class="carrosTitulos">
+      <h2>SUVs</h2>
+      <p>Encontre o SUV ideal para você!</p>
+    </div>
+
+    <div class="carros">
+      <div class="card">
+        <img
+          src="assets/carros/pulse.png"
+          alt="Fiat Pulse"
+          class="img-carros"
+        />
+        <h3>Fiat Pulse - 2024</h3>
+        <p>20.000 km | Flex | Automático</p>
+        <strong>R$ 90.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Fiat Pulse 2024',
+              'R$ 90.000,00',
+              '20.000 km',
+              'Flex',
+              'Automático',
+              'assets/carros/pulse.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/kardian.png"
+          alt="Renault Kardian"
+          class="img-carros"
+        />
+        <h3>Renault Kardian Techno - 2025</h3>
+        <p>15.000 km | Flex | Automático</p>
+        <strong>R$ 95.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Renault Kardian Techno 2025',
+              'R$ 95.000,00',
+              '15.000 km',
+              'Flex',
+              'Automático',
+              'assets/carros/kardian.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/tracker.png"
+          alt="Chevrolet Tracker"
+          class="img-carros"
+        />
+        <h3>Chevrolet Tracker - 2022</h3>
+        <p>0 km | Flex | Automático</p>
+        <strong>R$ 65.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Chevrolet Tracker 2022',
+              'R$ 65.000,00',
+              '0 km',
+              'Flex',
+              'Automático',
+              'assets/carros/tracker.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/duster.png"
+          alt="Renault Duster"
+          class="img-carros"
+        />
+        <h3>Renault Duster - 2019</h3>
+        <p>10.000 km | Flex | Automático</p>
+        <strong>R$ 65.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Renault Duster 2019',
+              'R$ 65.000,00',
+              '10.000 km',
+              'Flex',
+              'Automático',
+              'assets/carros/duster.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/renegade.png"
+          alt="Jeep Renegade"
+          class="img-carros"
+        />
+        <h3>Jeep Renegade - 2020</h3>
+        <p>10.000 km | Flex | Automático</p>
+        <strong>R$ 60.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Jeep Renegade 2020',
+              'R$ 60.000,00',
+              '10.000 km',
+              'Flex',
+              'Automático',
+              'assets/carros/renegade.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/creta.png"
+          alt="Hyundai Creta"
+          class="img-carros"
+        />
+        <h3>Hyundai Creta - 2022</h3>
+        <p>30.000 km | Flex | Automático</p>
+        <strong>R$ 55.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Hyundai Creta 2022',
+              'R$ 55.000,00',
+              '30.000 km',
+              'Flex',
+              'Automático',
+              'assets/carros/creta.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/kicks.png"
+          alt="Nissan Kicks"
+          class="img-carros"
+        />
+        <h3>Nissan Kicks - 2018</h3>
+        <p>10.000 km | Flex | Automático</p>
+        <strong>R$ 72.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Nissan Kicks 2018',
+              'R$ 72.000,00',
+              '10.000 km',
+              'Flex',
+              'Automático',
+              'assets/carros/kicks.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/tcross.png"
+          alt="Volkswagen T-Cross"
+          class="img-carros"
+        />
+        <h3>Volkswagen T-Cross - 2021</h3>
+        <p>52.000 km | Flex | Automático</p>
+        <strong>R$ 80.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Volkswagen T-Cross 2021',
+              'R$ 80.000,00',
+              '52.000 km',
+              'Flex',
+              'Automático',
+              'assets/carros/tcross.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+    </div>
+
+    <div id="modal-veiculo" class="modal-veiculo">
+      <div class="modal-conteudo">
+        <button class="fechar-modal" onclick="fecharModal()">&times;</button>
+        <img id="modal-imagem" src="" alt="Veículo" />
+        <div class="detalhes-veiculo">
+          <h2 id="modal-nome"></h2>
+          <h3 id="modal-preco"></h3>
+          <div class="info-veiculo">
+            <span id="modal-km"></span>
+            <span id="modal-combustivel"></span>
+            <span id="modal-cambio"></span>
+          </div>
+          <p>Interessado neste veículo? Entre em contato com nossa equipe!</p>
+          <button class="botao-interesse">Tenho interesse neste veículo</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="rodapé" id="rodape">
+      <p class="title-rodape">
+        &copy; 2026 Alpha Motors and Bikes. Todos os direitos reservados.
+      </p>
+      <div class="redes-sociais">
+        <a href="https://www.instagram.com/alpha_motors_bikes/" target="_blank"
+          ><i class="fa-brands fa-instagram links-rodape">
+            | Visite nosso perfil no Instagram</i
+          ></a
+        >
+        <a
+          href="https://www.facebook.com/profile.php?id=100089168091187"
+          target="_blank"
+          ><i class="fa-brands fa-facebook links-rodape">
+            | Visite nosso perfil no Facebook</i
+          ></a
+        >
+        <a href="https://twitter.com/AlphaMotorsB" target="_blank"
+          ><i class="fa-brands fa-x-twitter links-rodape">
+            | Visite nosso perfil no X</i
+          ></a
+        >
+        <a href="https://wa.me/551128833666" target="_blank"
+          ><i class="fa-brands fa-whatsapp links-rodape">
+            | Fale com a Alpha pelo WhatsApp</i
+          ></a
+        >
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

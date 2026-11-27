@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Alpha | Motors and Bikes</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/LOGO_AMB-04.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="assets/LOGO_AMB-01.png"
+          alt="Logo Alpha Motors"
+          class="logo-img"
+        />
+
+        <div class="logo-titulo">
+          <h2>Alpha Motors</h2>
+          <p>Carros e motos</p>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <ul class="lista">
+          <li><a href="index.html" class="secoes">Início</a></li>
+          <li><a href="#comprar" class="secoes">Comprar</a></li>
+          <li><a href="venda.html" class="secoes">Vender</a></li>
+          <li><a href="#rodape" class="secoes">Sobre nós</a></li>
+        </ul>
+      </nav>
+
+      <div class="btn-area">
+        <button id="btn-dark">Modo Escuro</button>
+        <a href="auth.html">
+          <button>
+            <i class="fa-regular fa-user"></i>
+          </button>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="banners">
+        <div class="slide">
+          <img
+            src="assets/compra.jpg"
+            alt="Banner principal"
+            class="banner-fotos"
+          />
+
+          <div class="conteudo">
+            <h1 class="titulo-banner">Encontre seu próximo veículo</h1>
+            <p>Qualidade e confiança para você escolher o melhor.</p>
+          </div>
+        </div>
+
+        <div class="slide2">
+          <img
+            src="assets/venda.png"
+            alt="Segundo banner"
+            class="banner-fotos"
+          />
+
+          <div class="conteudo">
+            <h1 class="titulo-banner">Seu próximo veículo está aqui</h1>
+            <p>Confira nossas categorias e encontre seu modelo ideal.</p>
+          </div>
+        </div>
+
+        <a class="anterior" onclick="mudarSlide(-1)">&#10094;</a>
+        <a class="proximo" onclick="mudarSlide(1)">&#10095;</a>
+      </section>
+
+      <section id="comprar">
+        <div class="carrosTitulos">
+          <h2>Encontre seu veículo</h2>
+          <p>Escolha uma categoria e confira os modelos disponíveis.</p>
+        </div>
+
+        <div class="carros">
+          <div class="card">
+            <img
+              src="assets/carros/hb20.png"
+              alt="Hatches"
+              class="img-carros"
+            />
+            <h3>Hatches</h3>
+            <p>Confira nossos modelos de veículos hatch.</p>
+            <button><a href="hatches.html">Ver modelos</a></button>
+          </div>
+
+          <div class="card">
+            <img src="assets/carros/creta.png" alt="SUVs" class="img-carros" />
+            <h3>SUVs</h3>
+            <p>Conheça nossas opções de SUVs.</p>
+            <button><a href="suv.html">Ver modelos</a></button>
+          </div>
+
+          <div class="card">
+            <img src="assets/carros/h6.png" alt="Híbridos" class="img-carros" />
+            <h3>Híbridos</h3>
+            <p>Descubra nossos veículos híbridos.</p>
+            <button><a href="hib.html">Ver modelos</a></button>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/carros/hilux.png"
+              alt="Picapes"
+              class="img-carros"
+            />
+            <h3>Picapes</h3>
+            <p>Confira nossas opções de picapes.</p>
+            <button><a href="picap.html">Ver modelos</a></button>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/carros/corolla.png"
+              alt="Sedãs"
+              class="img-carros"
+            />
+            <h3>Sedãs</h3>
+            <p>Encontre o sedã ideal para você.</p>
+            <button><a href="seda.html">Ver modelos</a></button>
+          </div>
+
+          <div class="card">
+            <img
+              src="assets/moto/sahara300.png"
+              alt="Motos"
+              class="img-carros"
+            />
+            <h3>Motos</h3>
+            <p>Conheça nossas opções de motocicletas.</p>
+            <button><a href="motos.html">Ver modelos</a></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodapé" id="rodape">
+      <p class="title-rodape">
+        &copy; 2026 Alpha Motors and Bikes. Todos os direitos reservados.
+      </p>
+      <div class="redes-sociais">
+        <a href="https://www.instagram.com/alpha_motors_bikes/" target="_blank"
+          ><i class="fa-brands fa-instagram links-rodape">
+            | Visite nosso perfil no Instagram</i
+          ></a
+        >
+        <a
+          href="https://www.facebook.com/profile.php?id=100089168091187"
+          target="_blank"
+          ><i class="fa-brands fa-facebook links-rodape">
+            | Visite nosso perfil no Facebook</i
+          ></a
+        >
+        <a href="https://twitter.com/AlphaMotorsB" target="_blank"
+          ><i class="fa-brands fa-x-twitter links-rodape">
+            | Visite nosso perfil no X</i
+          ></a
+        >
+        <a href="https://wa.me/551128833666" target="_blank"
+          ><i class="fa-brands fa-whatsapp links-rodape">
+            | Fale com a Alpha pelo WhatsApp</i
+          ></a
+        >
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

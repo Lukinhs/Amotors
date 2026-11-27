@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha | Motors and Bikes</title>
+    <link rel="icon" type="image/x-icon" href="assets/LOGO_AMB-04.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="paginas">
+    <header>
+      <div class="logo">
+        <img
+          src="assets/LOGO_AMB-01.png"
+          alt="Logo Alpha Motors"
+          class="logo-img"
+        />
+
+        <div class="logo-titulo">
+          <h2>Alpha Motors</h2>
+          <p>Carros e motos</p>
+        </div>
+      </div>
+
+      <nav class="menu">
+        <ul class="lista">
+          <li><a href="index.html" class="secoes">Início</a></li>
+          <li><a href="#comprar" class="secoes">Comprar</a></li>
+          <li><a href="venda.html" class="secoes">Vender</a></li>
+          <li><a href="#rodape" class="secoes">Sobre nós</a></li>
+        </ul>
+      </nav>
+
+      <div class="btn-area">
+        <button id="btn-dark">Modo Escuro</button>
+        <button><i class="fa-regular fa-user"></i></button>
+      </div>
+    </header>
+
+    <div class="carrosTitulos">
+      <h2>Motos</h2>
+      <p>Encontre a moto ideal para você!</p>
+    </div>
+
+    <div class="carros">
+      <div class="card">
+        <img
+          src="assets/moto/sahara300.png"
+          alt="Honda Sahara 300"
+          class="img-carros"
+        />
+        <h3>Honda Sahara 300 ABS - 2024</h3>
+        <p>⏲ 8.000 km | Único dono</p>
+        <strong>R$ 31.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Honda Sahara 300 ABS 2024',
+              'R$ 31.000,00',
+              '8.000 km',
+              'Gasolina',
+              'Manual',
+              'assets/moto/sahara300.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/moto/cb500.png"
+          alt="Honda CB 500F"
+          class="img-carros"
+        />
+        <h3>Honda CB 500F - 2023</h3>
+        <p>⏲ 12.000 km | Único dono</p>
+        <strong>R$ 40.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Honda CB 500F 2023',
+              'R$ 40.000,00',
+              '12.000 km',
+              'Gasolina',
+              'Manual',
+              'assets/moto/cb500.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/moto/titan160.png"
+          alt="Honda CG 160 Titan"
+          class="img-carros"
+        />
+        <h3>Honda CG 160 Titan - 2023</h3>
+        <p>⏲ 15.000 km | Único dono</p>
+        <strong>R$ 18.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Honda CG 160 Titan 2023',
+              'R$ 18.000,00',
+              '15.000 km',
+              'Flex',
+              'Manual',
+              'assets/moto/titan160.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/moto/denver250.png"
+          alt="Shineray Denver 250"
+          class="img-carros"
+        />
+        <h3>Shineray Denver 250 - 2026</h3>
+        <p>⏲ 3.000 km | Único dono</p>
+        <strong>R$ 23.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Shineray Denver 250 2026',
+              'R$ 23.000,00',
+              '3.000 km',
+              'Gasolina',
+              'Manual',
+              'assets/moto/denver250.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/moto/bmw310.png"
+          alt="BMW G 310 R"
+          class="img-carros"
+        />
+        <h3>BMW G 310 R - 2022</h3>
+        <p>⏲ 18.000 km | Revisada</p>
+        <strong>R$ 29.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'BMW G 310 R 2022',
+              'R$ 29.000,00',
+              '18.000 km',
+              'Gasolina',
+              'Manual',
+              'assets/moto/bmw310.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/moto/bmws1000.png"
+          alt="BMW S 1000 RR"
+          class="img-carros"
+        />
+        <h3>BMW S 1000 RR - 2026</h3>
+        <p>⏲ 5.000 km | Único dono</p>
+        <strong>R$ 125.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'BMW S 1000 RR 2026',
+              'R$ 125.000,00',
+              '5.000 km',
+              'Gasolina',
+              'Manual',
+              'assets/moto/bmws1000.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/moto/factor150.png"
+          alt="Yamaha Factor 150"
+          class="img-carros"
+        />
+        <h3>Yamaha Factor 150 - 2026</h3>
+        <p>⏲ 8.000 km | Único dono</p>
+        <strong>R$ 18.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Yamaha Factor 150 2026',
+              'R$ 18.000,00',
+              '8.000 km',
+              'Flex',
+              'Manual',
+              'assets/factor.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/moto/storm200.png"
+          alt="SBM Storm 200"
+          class="img-carros"
+        />
+        <h3>SBM Storm 200 EFI - 2026</h3>
+        <p>⏲ 3.500 km | Único dono</p>
+        <strong>R$ 19.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'SBM Storm 200 EFI 2026',
+              'R$ 19.000,00',
+              '3.500 km',
+              'Gasolina',
+              'Manual',
+              'assets/moto/storm200.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+    </div>
+
+    <div id="modal-veiculo" class="modal-veiculo">
+      <div class="modal-conteudo">
+        <button class="fechar-modal" onclick="fecharModal()">&times;</button>
+
+        <img id="modal-imagem" src="" alt="Veículo" />
+
+        <div class="detalhes-veiculo">
+          <h2 id="modal-nome"></h2>
+
+          <h3 id="modal-preco"></h3>
+
+          <div class="info-veiculo">
+            <span id="modal-km"></span>
+            <span id="modal-combustivel"></span>
+            <span id="modal-cambio"></span>
+          </div>
+
+          <p>Interessado nesta moto? Entre em contato com nossa equipe!</p>
+
+          <button class="botao-interesse">Tenho interesse nesta moto</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="rodapé" id="rodape">
+      <p class="title-rodape">
+        &copy; 2026 Alpha Motors and Bikes. Todos os direitos reservados.
+      </p>
+
+      <div class="redes-sociais">
+        <a href="https://www.instagram.com/alpha_motors_bikes/" target="_blank"
+          ><i class="fa-brands fa-instagram links-rodape">
+            | Visite nosso perfil no Instagram</i
+          ></a
+        >
+
+        <a
+          href="https://www.facebook.com/profile.php?id=100089168091187"
+          target="_blank"
+          ><i class="fa-brands fa-facebook links-rodape">
+            | Visite nosso perfil no Facebook</i
+          ></a
+        >
+
+        <a href="https://twitter.com/AlphaMotorsB" target="_blank"
+          ><i class="fa-brands fa-x-twitter links-rodape">
+            | Visite nosso perfil no X</i
+          ></a
+        >
+
+        <a href="https://wa.me/551128833666" target="_blank"
+          ><i class="fa-brands fa-whatsapp links-rodape">
+            | Fale com a Alpha pelo WhatsApp</i
+          ></a
+        >
+      </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

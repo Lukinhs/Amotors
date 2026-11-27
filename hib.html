@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alpha | Motors and Bikes</title>
+    <link rel="icon" type="image/x-icon" href="assets/LOGO_AMB-04.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="paginas">
+    <header>
+      <div class="logo">
+        <img
+          src="assets/LOGO_AMB-01.png"
+          alt="Logo Alpha Motors"
+          class="logo-img"
+        />
+        <div class="logo-titulo">
+          <h2>Alpha Motors</h2>
+          <p>Carros e motos</p>
+        </div>
+      </div>
+      <nav class="menu">
+        <ul class="lista">
+          <li><a href="index.html" class="secoes">Início</a></li>
+          <li><a href="#comprar" class="secoes">Comprar</a></li>
+          <li><a href="venda.html" class="secoes">Vender</a></li>
+          <li><a href="#rodape" class="secoes">Sobre nós</a></li>
+        </ul>
+      </nav>
+      <div class="btn-area">
+        <button id="btn-dark">Modo Escuro</button>
+        <button><i class="fa-regular fa-user"></i></button>
+      </div>
+    </header>
+
+    <div class="carrosTitulos">
+      <h2>Híbridos</h2>
+      <p>Encontre o híbrido ideal para você!</p>
+    </div>
+
+    <div class="carros">
+      <div class="card">
+        <img
+          src="assets/carros/plus.png"
+          alt="BYD Song Plus DM-i"
+          class="img-carros"
+        />
+        <h3>BYD Song Plus DM-i - 2023</h3>
+        <p>0 km | Híbrido plug-in | Automático</p>
+        <strong>R$ 195.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'BYD Song Plus DM-i 2023',
+              'R$ 195.000,00',
+              '0 km',
+              'Híbrido plug-in',
+              'Automático',
+              'assets/carros/plus.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/pulse.png"
+          alt="Fiat Pulse T200 Hybrid"
+          class="img-carros"
+        />
+        <h3>Fiat Pulse T200 Hybrid - 2024</h3>
+        <p>15.000 km | Flex híbrido leve | Automático</p>
+        <strong>R$ 100.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Fiat Pulse T200 Hybrid 2024',
+              'R$ 100.000,00',
+              '15.000 km',
+              'Flex híbrido leve',
+              'Automático',
+              'assets/carros/pulse.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/h6.png"
+          alt="GWM Haval H6 HEV"
+          class="img-carros"
+        />
+        <h3>GWM Haval H6 HEV - 2024</h3>
+        <p>15.000 km | Híbrido | Automático</p>
+        <strong>R$ 150.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'GWM Haval H6 HEV 2024',
+              'R$ 150.000,00',
+              '15.000 km',
+              'Híbrido',
+              'Automático',
+              'assets/carros/h6.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/compass.png"
+          alt="Jeep Compass"
+          class="img-carros"
+        />
+        <h3>Jeep Compass - 2022</h3>
+        <p>30.000 km | Flex | Automático</p>
+        <strong>R$ 125.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Jeep Compass 2022',
+              'R$ 125.000,00',
+              '30.000 km',
+              'Flex',
+              'Automático',
+              'assets/carros/compass.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/cross.png"
+          alt="Toyota Corolla Cross Hybrid"
+          class="img-carros"
+        />
+        <h3>Toyota Corolla Cross Hybrid - 2022</h3>
+        <p>20.000 km | Híbrido | Automático</p>
+        <strong>R$ 120.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Toyota Corolla Cross Hybrid 2022',
+              'R$ 120.000,00',
+              '20.000 km',
+              'Híbrido',
+              'Automático',
+              'assets/carros/cross.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/kona.png"
+          alt="Hyundai Kona"
+          class="img-carros"
+        />
+        <h3>Hyundai Kona - 2023</h3>
+        <p>15.000 km | Híbrido | Automático</p>
+        <strong>R$ 145.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Hyundai Kona 2023',
+              'R$ 145.000,00',
+              '15.000 km',
+              'Híbrido',
+              'Automático',
+              'assets/carros/kona.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img
+          src="assets/carros/omoda.png"
+          alt="SAIC Omoda 5"
+          class="img-carros"
+        />
+        <h3>SAIC Omoda 5 - 2025</h3>
+        <p>0 km | Híbrido | Automático</p>
+        <strong>R$ 150.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'SAIC Omoda 5 2025',
+              'R$ 150.000,00',
+              '0 km',
+              'Híbrido',
+              'Automático',
+              'assets/carros/omoda.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+
+      <div class="card">
+        <img src="assets/carros/niro.png" alt="Kia Niro" class="img-carros" />
+        <h3>Kia Niro - 2022</h3>
+        <p>10.000 km | Híbrido | Automático</p>
+        <strong>R$ 130.000,00</strong>
+        <button
+          type="button"
+          class="btn-comprar"
+          onclick="
+            abrirModal(
+              'Kia Niro 2022',
+              'R$ 130.000,00',
+              '10.000 km',
+              'Híbrido',
+              'Automático',
+              'assets/carros/niro.png',
+            )
+          "
+        >
+          Comprar
+        </button>
+      </div>
+    </div>
+
+    <div id="modal-veiculo" class="modal-veiculo">
+      <div class="modal-conteudo">
+        <button class="fechar-modal" onclick="fecharModal()">&times;</button>
+        <img id="modal-imagem" src="" alt="Veículo" />
+        <div class="detalhes-veiculo">
+          <h2 id="modal-nome"></h2>
+          <h3 id="modal-preco"></h3>
+          <div class="info-veiculo">
+            <span id="modal-km"></span>
+            <span id="modal-combustivel"></span>
+            <span id="modal-cambio"></span>
+          </div>
+          <p>Interessado neste veículo? Entre em contato com nossa equipe!</p>
+          <button class="botao-interesse">Tenho interesse neste veículo</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="rodapé" id="rodape">
+      <p class="title-rodape">
+        &copy; 2026 Alpha Motors and Bikes. Todos os direitos reservados.
+      </p>
+      <div class="redes-sociais">
+        <a href="https://www.instagram.com/alpha_motors_bikes/" target="_blank"
+          ><i class="fa-brands fa-instagram links-rodape">
+            | Visite nosso perfil no Instagram</i
+          ></a
+        >
+        <a
+          href="https://www.facebook.com/profile.php?id=100089168091187"
+          target="_blank"
+          ><i class="fa-brands fa-facebook links-rodape">
+            | Visite nosso perfil no Facebook</i
+          ></a
+        >
+        <a href="https://twitter.com/AlphaMotorsB" target="_blank"
+          ><i class="fa-brands fa-x-twitter links-rodape">
+            | Visite nosso perfil no X</i
+          ></a
+        >
+        <a href="https://wa.me/551128833666" target="_blank"
+          ><i class="fa-brands fa-whatsapp links-rodape">
+            | Fale com a Alpha pelo WhatsApp</i
+          ></a
+        >
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>
